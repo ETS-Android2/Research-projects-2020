@@ -16,9 +16,13 @@ A final objective of this assignment is to be able to **share the information a
 ## Instructions to deliver the assigment
 
 For **every team of 5 people**, **two of them** will be preparing a tutorial on a  process. It can be something that they are using for their course project or that they are interested in digging a bit further.
+
 To have more variety on the topics covered, *please contact your teacher before beginning preparing the tutorial*.
+
 Groups of two people need to create a folder in their project repo named "research" and then a  `"/research/TUTORIAL.md"` file with the explanations, images, pieces of code, etc. similar to the ones used for your laboratory sessions.
+
 The **three remaining** team members will be randomly assigned two tutorials elaborated by some other teams. They will need to follow the tutorial and submit evidence of their job in `"/research/RESPONSE_1.md"` and `"/research/RESPONSE_2.md"` including feedback for the authors and their grade on how well elaborated and interesting they find it.
+
 The teacher will evaluate the tutorials based on his criteria and the feedback offered by the groups of 3 students.
 Once all tutorials evaluated, they will be included in this repository to make them available for everyone.
 

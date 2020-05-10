@@ -19,17 +19,21 @@ For **every team of 5 people**, **two of them** will be preparing a tutorial on 
 
 To have more variety on the topics covered, *please contact your teacher before beginning preparing the tutorial*.
 
-Groups of two people need to create a folder in their project repo named "research" and then a  `"/research/TUTORIAL.md"` file with the explanations, images, pieces of code, etc. similar to the ones used for your laboratory sessions.
+Groups of two people need to create a folder in their project repo named "research" and then a  `"/research/tutorial/README.md"` file with the explanations, images, pieces of code, etc. similar to the ones used for your laboratory sessions.
 
-The **three remaining** team members will be randomly assigned two tutorials elaborated by some other teams. They will need to follow the tutorial and submit evidence of their job in `"/research/RESPONSE_1.md"` and `"/research/RESPONSE_2.md"` including feedback for the authors and their grade on how well elaborated and interesting they find it.
+The **three remaining** team members will be randomly assigned two tutorials elaborated by some other teams. They will need to follow the tutorial and submit evidence of their job in `"/research/response1/README.md"` and `"/research/response2/README.md"` including feedback for the authors and their grade on how well elaborated and interesting they find it.
+
+Add a file `"/research/authors.json"` 
+
+``json
+{ 
+"creators" : ["NAME1@est.fib.upc.edu","NAME2@est.fib.upc.edu"],
+"validators": ["NAME3@est.fib.upc.edu","NAME4@est.fib.upc.edu","NAME5@est.fib.upc.edu" ]
+}
+``
 
 The teacher will evaluate the tutorials based on his criteria and the feedback offered by the groups of 3 students.
 Once all tutorials evaluated, they will be included in this repository to make them available for everyone.
-
-## Deadlines
-
-- For the tutorial creation May 11th 2020
-- For the tutorial responses June 1st 2020
 
 ## Tutorials
 
@@ -41,6 +45,26 @@ Once all tutorials evaluated, they will be included in this repository to make t
 - []()
 - []()
 - []()
+
+### Assignment
+
+| Team | Assignment 1 | Assignment 2 |
+|:------|:-------------:|:-------------:|
+| Tue. 8:00| [Tableau](./03_Tableau/README.md) | [Kafka](./02_Kaftka/README.md)  |
+| Tue. 8:30| | |
+| Tue. 9:00| | |
+| Tue. 9:30| [Tableau](./03_Tableau/README.md) | [Google Colab](./04_GoogleColab/README.md) | 
+| Fri. 8:00| [Atlas](./01_MongoDB/README.md) | [Google Colab](./04_GoogleColab/README.md)  |
+| Fri. 8:30| [Atlas](./01_MongoDB/README.md) | [Kafka](./02_Kaftka/README.md)| 
+| Fri. 9:00| | |
+| Fri. 9:30| | |
+
+NOTE: please update the file `"/research/authors.json"`  as stated above.
+
+## Deadlines
+
+- For the tutorial creation May 11th 2020
+- For the tutorial responses June 1st 2020
 
 
 

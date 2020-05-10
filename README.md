@@ -34,4 +34,14 @@ Once all tutorials evaluated, they will be included in this repository to make t
 ## Tutorials
 
 - [Get Started with MongoDB Atlas](./01_MongoDB/README.md)
+- [Kafka: What is it? How can it help me?](./02_Kaftka/README.md)
+- [Explore Data with Tableau](./03_Tableau/README.md)
+- [Training deep learning models on Google Colab](./04_GoogleColab/README.md)
+- []()
+- []()
+- []()
+- []()
+
+
+
 

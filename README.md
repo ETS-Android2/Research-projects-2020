@@ -27,8 +27,15 @@ Add a file `"/research/authors.json"`
 
 ``json
 { 
-"creators" : ["NAME1@est.fib.upc.edu","NAME2@est.fib.upc.edu"],
-"validators": ["NAME3@est.fib.upc.edu","NAME4@est.fib.upc.edu","NAME5@est.fib.upc.edu" ]
+    "creators" : [ 
+        "NAME1@est.fib.upc.edu",
+        "NAME2@est.fib.upc.edu"
+        ],
+    "validators": [
+        "NAME3@est.fib.upc.edu",
+        "NAME4@est.fib.upc.edu",
+        "NAME5@est.fib.upc.edu" 
+        ]
 }
 ``
 

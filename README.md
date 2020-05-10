@@ -31,3 +31,7 @@ Once all tutorials evaluated, they will be included in this repository to make t
 - For the tutorial creation May 11th 2020
 - For the tutorial responses June 1st 2020
 
+## Tutorials
+
+- [Get Started with MongoDB Atlas](./01_MongoDB/README.md)
+

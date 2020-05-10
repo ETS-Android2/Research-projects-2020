@@ -25,7 +25,7 @@ The **three remaining** team members will be randomly assigned two tutorials ela
 
 Add a file `"/research/authors.json"` 
 
-``json
+``JSON
 { 
     "creators" : [ 
         "NAME1@est.fib.upc.edu",

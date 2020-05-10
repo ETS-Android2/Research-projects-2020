@@ -48,7 +48,7 @@ Once all tutorials evaluated, they will be included in this repository to make t
 - [Kafka: What is it? How can it help me?](./02_Kaftka/README.md)
 - [Explore Data with Tableau](./03_Tableau/README.md)
 - [Training deep learning models on Google Colab](./04_GoogleColab/README.md)
-- []()
+- [Use SQS to execute processes on demand](./05_SQS/README.md)
 - []()
 - []()
 - []()
@@ -58,12 +58,12 @@ Once all tutorials evaluated, they will be included in this repository to make t
 | Team | Assignment 1 | Assignment 2 |
 |:------|:-------------:|:-------------:|
 | Tue. 8:00| [Tableau](./03_Tableau/README.md) | [Kafka](./02_Kaftka/README.md)  |
-| Tue. 8:30| | |
+| Tue. 8:30| [SQS](./05_SQS/README.md) | |
 | Tue. 9:00| | |
 | Tue. 9:30| [Tableau](./03_Tableau/README.md) | [Google Colab](./04_GoogleColab/README.md) | 
 | Fri. 8:00| [Atlas](./01_MongoDB/README.md) | [Google Colab](./04_GoogleColab/README.md)  |
 | Fri. 8:30| [Atlas](./01_MongoDB/README.md) | [Kafka](./02_Kaftka/README.md)| 
-| Fri. 9:00| | |
+| Fri. 9:00| [SQS](./05_SQS/README.md)| |
 | Fri. 9:30| | |
 
 NOTE: please update the file `"/research/authors.json"`  as stated above.

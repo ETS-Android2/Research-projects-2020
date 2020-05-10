@@ -37,7 +37,7 @@ Add a file `"/research/authors.json"`
         "NAME5@est.fib.upc.edu" 
         ]
 }
-``
+```
 
 The teacher will evaluate the tutorials based on his criteria and the feedback offered by the groups of 3 students.
 Once all tutorials evaluated, they will be included in this repository to make them available for everyone.

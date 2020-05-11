@@ -1,0 +1,62 @@
+apply plugin: 'com.android.application'
+
+apply plugin: 'kotlin-android'
+
+apply plugin: 'kotlin-android-extensions'
+// Step 2
+// Uncomment below
+//apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.example.androidfirebasetutorial"
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility = '1.8'
+        targetCompatibility = '1.8'
+    }
+
+}
+android.defaultConfig.javaCompileOptions.annotationProcessorOptions.includeCompileClasspath = true
+androidExtensions {
+    experimental = true
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'com.google.android.material:material:1.0.0'
+    implementation 'androidx.core:core-ktx:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test:runner:1.2.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation "androidx.recyclerview:recyclerview:1.1.0"
+    implementation 'io.reactivex:rxjava:1.2.2'
+    implementation 'io.reactivex:rxandroid:1.2.1'
+
+    // Add the Firebase SDK for Google Analytics
+    implementation 'com.google.firebase:firebase-analytics:17.4.1'
+
+    // Add the dependencies for any other Firebase products you want to use in your app
+    // For example, to also use Firebase Authentication
+    implementation 'com.google.firebase:firebase-auth:19.3.1'
+
+    //Step Realtime db
+    implementation 'com.google.firebase:firebase-database:19.3.0'
+}

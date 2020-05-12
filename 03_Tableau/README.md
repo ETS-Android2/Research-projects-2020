@@ -41,17 +41,17 @@ A visual summary of information simplifies the identification of patterns and tr
 
 Tableau is one of the most popular and powerful data visualizations tools, it is developed by Tableau software  and currently being used in various BI industries as their number one choice. Tableau provides an easy drag and drop interface making it a very userfriendly tool to change or transform the raw data into an easily understandable format with almost zero technical skills and coding knowledge. The following features and statstics indicate why [Tableau](https://mindmajix.com/tableau-best-bi-tool) is a market leader among tools for BI.
 
-![](/research/Images/Tableau_Why.PNG)
+![](./Images/Tableau_Why.PNG)
 
 
 
 [Tableau](https://www.tableau.com/reports/gartner) is recognized as a Leader in the 2020 Gartner Magic Quadrant for Analytics and Business Intelligence Platforms 
 
-![](/research/Images/Tableau_2020_Rank.jpg)
+![](./Images/Tableau_2020_Rank.jpg)
 
 The Gartner Magic Quadrant for selected business intelligence 2020 update shows the evolution of [Tableau](https://exceleratorbi.com.au/extract-numerical-data-points-from-an-image/) from 2015 to 2020 with considerable progress and placed on the top of the pool with Microsoft power BI and other popular tools.
 
-![](/research/Images/Tableau_Ranking.png)
+![](./Images/Tableau_Ranking.png)
 
 #### Tableau success stories of Enterprises
 Today digital transformation is as a key strategic initiative and business intelligence tools have evolved to help companies make the most of their data. Below we listed a few success stories of [enterprises](https://www.tableau.com/learn/articles/business-intelligence-examples) using tableau as their BI platform 
@@ -94,11 +94,11 @@ Tableau is greatly used because any kind of data can be analyzed very quickly an
 
 The following are some of the promising [Tableau features](https://intellipaat.com/blog/what-is-tableau/) that makes tableau a number one visualization tool to build BI solutions.
 
-![](/research/Images/Tableau_Features.PNG)
+![](./Images/Tableau_Features.PNG)
 
 In addition to the features mentioned above, newer Tableau editions support the following additional [features](https://mindmajix.com/tableau-best-bi-tool). <br/>
   
-![](/research/Images/New_Features.PNG)
+![](./Images/New_Features.PNG)
   
 
 
@@ -106,7 +106,7 @@ In addition to the features mentioned above, newer Tableau editions support the 
 
 One of the biggest advantages of Tableau over other business intelligence tools is its ability to connect to various data sources and to create advanced vidualization without any prior technical expertize. Tableau provides a platform to perform edge catching visualizations.The figure below presents how tableau works with disparate data sources.
 
-![](/research/Images/Data_Sources.PNG)
+![](./Images/Data_Sources.PNG)
 
 # 7. Tableau Practical: Analayzing a COVID-19 DataSet
 
@@ -133,13 +133,13 @@ To import locally stored data into tableau workspace follow the following steps:
 4. Drag to the workspace area and start exploring.
 
 When you import data into tableau, the tableau [workspance](https://www.guru99.com/introduction-tableau-workspace-navigation.html) looks like as shown below. There might be some difference  when you use different tableau products and versions. 
-![](/research/Images/Workspace.PNG)
+![](./Images/Workspace.PNG)
 
 Figure: Tableau Interface(WorkSpace)
    
 To start analysing the data , it is good idea to understand your data formats. The following icons represent the different data types in tableau.
  
-![](/research/Images/Data_Icons.PNG)
+![](./Images/Data_Icons.PNG)
 
 ##### Measures and Dimensions in Tableau
 
@@ -148,7 +148,7 @@ From the above figure, we can see different symbols which corresponds to differe
 **Dimensions**,on the other hand, contain qualitative values. Dimensions are used to categorize, segment, and reveal the details in the data and determine the level of visualizations such as slicing, and drill down operations.<br/>
 When you import data tableau automatically categorize each fileds into dimensions and measures, but user can customize it. When the data is successfully imported the data will looks like as depicted below  
 
-![](/research/Images/Dimenisions_Measures.PNG)
+![](./Images/Dimenisions_Measures.PNG)
  
 Figure:Measures and Dimensions
 
@@ -159,7 +159,7 @@ If your analysis depends on single data source, this step may not be necessary. 
 2. Specify the columns to join on 
 3. Join the files by selecting anyone of the following join types<br/>
   
-    ![](/research/Images/Join_types.PNG)
+    ![](./Images/Join_types.PNG)
 
 ## Task 2 Create Visualizations
 
@@ -174,7 +174,7 @@ The most commonly used graphs and charts are:<br/>
 
 In the data pane on the left side you can see the column headers of the data we imported. You can simply create visualizations by drag and drop from the data pane in to the field title.<br/>
 
-![](/research/Images/Show_Me.PNG)
+![](./Images/Show_Me.PNG)
 
 *One very nice  feature about Tableau is that by default it selects the convenient visualization type(charts/graphs) for your data based on the selected selected measures and dimensions.*  
 
@@ -187,17 +187,17 @@ The first step to create a new visualization is to create a new sheet in your wo
 
 In our case let's take date as columns, countries and sum of confirmed cases for size in marks. Now you can see all possible options how to display your data by clicking on the 'Show Me' button on the top right corner. Select the map. This selection will generate one world map for every day in our data, presenting the cumulative confirmed infections of every country per day.
 
-![](/research/Images/world_map1.png)
+![](./Images/world_map1.png)
 
 At the moment the granularity for date is set to years which is not helpful in our case. Set it to days because the data we imported is already representing sums on a daily basis.
 
-![](/research/Images/world_map2.png)
+![](./Images/world_map2.png)
 
 ### Task 2.1.2 Apply filters
 
 Taking a look at the map we generated we see a lot of dots with the value 0. We can exclude these values by a filter. To do that click on the sum confirmed field and enable show filter. Now you can see a slider on the right hand side of the window in the legend. You can either use the slider or click on the numbers above to modify the value. Let us exclude the zero values by setting the minimum number of confirmed cases to 1.
 
-![](/research/Images/world_map3.png)
+![](./Images/world_map3.png)
 
 
 ### Task 2.2 Create a trendline
@@ -213,9 +213,9 @@ In the same way as before drag and drop the desired attributes into columns, onc
 
 Dragging and dropping the icon country/region over color we can colorize the different lines. You can change the color scheme by clicking on the color button as you see fit. Now to filter for individual country you once again enable show filter. Enabling a filters displays a long list which is taking a lot of space in the legend. By expanding the icon in the top right corner in the country/region box we can transform the filterlist to for example a dropdown menu with multiple values. First unselect All, then select a few countries of your choice for example China, Italy, Spain and the US.
 
-![](/research/Images/trend1.png)
+![](./Images/trend1.png)
 
-![](/research/Images/trend2.png)
+![](./Images/trend2.png)
 
  ## Task 3: More Specific visualization
  
@@ -228,7 +228,7 @@ Steps
 3.	Drag and drop states/province  into the cards  color section and show the filter
 4. In the filter area,select the states you want to see the past  and forcast trend.In our case we choose to focus only to five states (New York, New Jersey, Califorina, Texas, )<br/>
 
-![](/research/Images/Trend_US_State.PNG)
+![](./Images/Trend_US_State.PNG)
 
 Figure: Number of Confirmed cases and deaths of US states
 ## How to apply forcasting to visualization
@@ -237,7 +237,7 @@ Forcast is one of the great features offered by tableau which enables us to pred
 1. Turn on forcating feature from the Analysis menu
 2. Decide the forcasting granuality 
 
-![](/research/Images/Forcast.png)
+![](./Images/Forcast.png)
 
 Figure: Applying forcast feature in Tableau
 
@@ -248,12 +248,12 @@ To use our visualizations for monitoring or presentation we can combine multiple
 Create a new dashboard by clicking the respective button at the bottom of the window right next to new sheets.
 You can add the visualizations created before by drag and drop the respective sheet from the left side. You can also add titles for the sheets you added as well for the whole dashboard. Furthermore, Tableau allows you to add various objects to customize your dashboard such as text, images or webpages. You will find these options in the bottom left corner. Your dashboard could look like this:
 
-![](/research/Images/dashboard.png)
+![](./Images/dashboard.png)
 
 # 8. Tableau COVID-19 Global Tracker Dashboard
 
 The image presented in this section illustrates the possiblities Tableau offers for advanced use. COVID-19 case data is the most important data right now. BI and tech companies in general are working tirelessly to provide interactive visualization on the spread of coronavirus and let the users get informed about the pandemic to reduce the impact as much as possible. Tableau is providing a daily global coronavirus tracker to help you stay updated on the confirmed case, total deaths, and the places most impacted by the pandemic with an interactive [dashboard](https://www.tableau.com/covid-19-coronavirus-data-resources) at various granularity levels as shown below. Following the link you can play with the dashbord. From the dashboard, we can understand that tableau is not only a visualization tool but also an advanced analytics tool .<br/> 
-![](/research/Images/COVID-19.PNG)
+![](./Images/COVID-19.PNG)
 
 
 

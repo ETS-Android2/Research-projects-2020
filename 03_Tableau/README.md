@@ -11,21 +11,21 @@ Table of content
 
 # 1. Introduction
 
-Recently, human computer interaction is another discipline gaining a major attention from both users and data analyst experts. Interacting with various data formats requires not only an appropriate analysis technique
-but also choosing the right tool plays a vital role to obtain the desired insights.
+Human computer interaction is a discipline recently gaining major attention from both users and data analyst experts. Interacting with various data formats requires not only appropriate analysis technique
+but choosing the right tool plays a vital role to obtain the desired insights as well.
 In this tutorial you will learn how to analyze data with [Tableau](http://tableau.com/) a leading Business Intelligence tool.
 Tableau is one of the fastest growing data visualization tool in the Business Intelligence industry.
-We choose tableau because it is perfect tool to create user friendly visualizations, to perform in-depth analysis for disparate data sources and manage and customize visualizations to answer user queries.
+We choose tableau because it is perfect tool to create user friendly visualizations, to perform in-depth analysis for disparate data sources, manage and customize visualizations as required.
 
 
 # 2.  What is Data Visualization?
 
-Data visualization is the representation of data using visual elements such as such as charts, graphs, and maps. Visualizations simplify the way data is presented to the end users. More importantly, in today's increasingly data driven world, data visualization enables decision-makers of any enterprise to look into analytical reports and understand concepts quickly which might be difficult to grasp otherwise.
+Data visualization is the representation of data using visual elements such as such as charts, graphs, and maps. Visualizations simplify the way data is presented to the end users. More importantly, in today's increasingly data driven world, data visualization enables decision-makers of any enterprise to look at analytical reports and understand concepts quickly which otherwise might be difficult to grasp.
 
 ## Why is data visualization important?
 
-Competition is tough in the current business landscape and challenging businesses with constant change which includes the need for information representation. It’s hard to think of a professional industry that doesn’t benefit from making data more understandable.
-A visual summary of information simplifies the identification of patterns and trends in sharp contrast to looking through thousands of rows spread over a spreadsheet or csv file. It's the way the human brain works. Since the purpose of data analysis is to gain insights, data is much more valuable when it is visualized.
+Competition is tough in the current business landscape and challenging businesses to change constantly which includes the need for information representation. It is hard to think of any industry that does not benefit from extracting more information out of their data.
+A visual summary of information simplifies the identification of patterns and trends very much in contrast to looking through thousands of rows spread over a spreadsheet or csv file. Since the purpose of data analysis is to gain insights, data is much more valuable when it is visualized.
  - Visualization helps people to understand things clearly and have a better insight in a topic
  - Data visualization helps us to identify relationships and patterns within data
  - Data of large volumes can also be interpreted easily and quickly
@@ -39,8 +39,7 @@ A visual summary of information simplifies the identification of patterns and tr
  
 # 3.Tableau
 
-Tableau is one of the most popular and powerful data visualizations tools which is created by Tableau software currently being used in various BI industries as their number one choice. It provides an easy drag and drop interface making it the best way to change or transform the raw data into an easily understandable format with almost zero technical skills and coding knowledge. The following features and statstics can answer that why [Tableau](https://mindmajix.com/tableau-best-bi-tool) is choosen as their primary tool over others visualization tools available on the market
-
+Tableau is one of the most popular and powerful data visualizations tools, it is developed by Tableau software  and currently being used in various BI industries as their number one choice. Tableau provides an easy drag and drop interface making it a very userfriendly tool to change or transform the raw data into an easily understandable format with almost zero technical skills and coding knowledge. The following features and statstics indicate why [Tableau](https://mindmajix.com/tableau-best-bi-tool) is a market leader among tools for BI.
 
 ![](/research/Images/Tableau_Why.PNG)
 
@@ -50,16 +49,12 @@ Tableau is one of the most popular and powerful data visualizations tools which 
 
 ![](/research/Images/Tableau_2020_Rank.jpg)
 
-Also, the Gartner Magic Quadrant for selected business intelligence 2020 update shows that the evolution of [Tableau](https://exceleratorbi.com.au/extract-numerical-data-points-from-an-image/) from 2015 to 2020 with an amazing progress and placed on the top of the pool with Microsoft power BI and other popular tools.
+The Gartner Magic Quadrant for selected business intelligence 2020 update shows the evolution of [Tableau](https://exceleratorbi.com.au/extract-numerical-data-points-from-an-image/) from 2015 to 2020 with considerable progress and placed on the top of the pool with Microsoft power BI and other popular tools.
 
 ![](/research/Images/Tableau_Ranking.png)
 
-
-
-From the above three figure, we can easily understand that why Tableau is a popular BI tool.  As we can see from the animation within 5 years, Tableau shows an amazing progress in the BI industry and now it is the second most used tool next to microsoft power BI. 
-  
-  #### Tableau success stories of Enterprises
- Digital transformation is now seen as a key strategic initiative and business intelligence tools have evolved to help companies make       the most of their data investments. Below we listed a few success stories of [enterprises](https://www.tableau.com/learn/articles/business-intelligence-examples) using tableau as their BI platform 
+#### Tableau success stories of Enterprises
+Today digital transformation is as a key strategic initiative and business intelligence tools have evolved to help companies make the most of their data. Below we listed a few success stories of [enterprises](https://www.tableau.com/learn/articles/business-intelligence-examples) using tableau as their BI platform 
   
   - **HelloFresh**: centralized digital marketing reporting to increase conversions
   -  **Coca-Cola**: Bottling Company maximized operational efficiency
@@ -94,16 +89,14 @@ For preparting the tutorial we use both Tableau Desktop and Tableau Online.
 
 # 5. Tableau Features
 
-Why we use Tableau when there are a lot of tools available in the market to perform data visualization? <br/> 
-Tableau is greatly used because any kind of data can be analyzed very quickly and it is used to explore data with limitless visual analytics. Moreover, without deep technical knowledge, we can perform starting from simple to advanced analytics by using its drag and drop functionally.
+Why do we use Tableau when there are a lot of tools available in the market to perform data visualization? <br/> 
+Tableau is greatly used because any kind of data can be analyzed very quickly and it is used to explore data with limitless visual analytics. Moreover, without deep technical knowledge, we can perform starting from simple to advanced analytics by using its drag and drop functionality.
 
 The following are some of the promising [Tableau features](https://intellipaat.com/blog/what-is-tableau/) that makes tableau a number one visualization tool to build BI solutions.
 
 ![](/research/Images/Tableau_Features.PNG)
 
-
-  
-In addition to the above features, newer Tableau editions support the following additional newerer [features](https://mindmajix.com/tableau-best-bi-tool). <br/>
+In addition to the features mentioned above, newer Tableau editions support the following additional [features](https://mindmajix.com/tableau-best-bi-tool). <br/>
   
 ![](/research/Images/New_Features.PNG)
   
@@ -111,19 +104,19 @@ In addition to the above features, newer Tableau editions support the following 
 
 # 6. Tableau Data Sources
 
-One of the biggest advantages of Tableau over other business intelligence tools is its ability to connect to various data sources and ability to create advanced vidualization without any prior technical expertize  . Tableau provides a platform to perform edge catching for visualizations.The figure below clearly presents that tableau works with disparate data sources.
+One of the biggest advantages of Tableau over other business intelligence tools is its ability to connect to various data sources and to create advanced vidualization without any prior technical expertize. Tableau provides a platform to perform edge catching visualizations.The figure below presents how tableau works with disparate data sources.
 
 ![](/research/Images/Data_Sources.PNG)
 
 # 7. Tableau Practical: Analayzing a COVID-19 DataSet
 
-In this section we explore the various features of the tool to create eye cataching visualizations and dashboards. 
+In this section we explore the various features of the tool to create eye cataching visualizations and combine these in dashboards. 
 
 ## Task 0
 
 ### Create a Trial account
 
-Go to the [Tableau](https://www.tableau.com/products/cloud-bi?openExternal=true#online-reg-form) homepage and create a free trial account. If you are working on windows or mac download the software. For linux users there is no desktop version you can use the webversion which is sufficient for most of this tutorial except the forecasting part.
+Go to the [Tableau](https://www.tableau.com/products/cloud-bi?openExternal=true#online-reg-form) homepage and create a free trial account. If you are working on windows or mac download the desktop software. For linux users there is no desktop version you can use the webversion which is sufficient for most of this tutorial except the forecasting part.
 
 ## Task 1 Prepare your Data
 
@@ -259,7 +252,7 @@ You can add the visualizations created before by drag and drop the respective sh
 
 # 8. Tableau COVID-19 Global Tracker Dashboard
 
-COVID-19 case data is the most important data right now. BI and tech companies in general are working tirelessly to provide interactive visualization on the spread of coronavirus and let the users get informed about the pandemic to reduce the impact as much as possible. Tableau is providing a daily global coronavirus tracker to help you stay updated on the confirmed case, total deaths, and the places most impacted by the pandemic with an interactive [dashboard](https://www.tableau.com/covid-19-coronavirus-data-resources) at various granularity levels as shown below. Following the link you can play with the dashbord. From the dashboard, we can understand that tableau is not only a visualization tool but also an advanced analytics tool .<br/> 
+The image presented in this section illustrates the possiblities Tableau offers for advanced use. COVID-19 case data is the most important data right now. BI and tech companies in general are working tirelessly to provide interactive visualization on the spread of coronavirus and let the users get informed about the pandemic to reduce the impact as much as possible. Tableau is providing a daily global coronavirus tracker to help you stay updated on the confirmed case, total deaths, and the places most impacted by the pandemic with an interactive [dashboard](https://www.tableau.com/covid-19-coronavirus-data-resources) at various granularity levels as shown below. Following the link you can play with the dashbord. From the dashboard, we can understand that tableau is not only a visualization tool but also an advanced analytics tool .<br/> 
 ![](/research/Images/COVID-19.PNG)
 
 

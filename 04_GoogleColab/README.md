@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Have you ever been stuck in training deep learning models because of not having a high configuration machine with GPUs and also financial capability to buy a GPU? If yes - this tutorial is for you!
+Have you ever been stuck in training a deep learning model due to insufficient computational resources of your machine maybe without GPUs or financial incapability to buy a high configuration machine? If yes - this tutorial is for you!
 
 [Google Colaboratory](https://colab.research.google.com/) is a service from Google that offers you GPUs and TPUs (Tensor Processing Unit) to train your model for free! You can have multiple instances of CPU, GPU, and TPU simultaneously, however, the only restriction is that you can run them for a continuous period of 12 hours. This is more than enough for most of the day-to-day deep learning tasks. After 12 hours, the machine is cleared. You can again request for resources and have them as there is no restriction on the number of request you can make. Apart from that, everything is already in configured in Colab, therefore you don't have to install any library or package to get started. It also facilitates in-built version control and easy sharing of the code. 
 
@@ -16,17 +16,17 @@ A new Colab notebook looks like the image below. To rename the notebook simply c
 
 ![rename notebook](images/readynotebook.png)
 
-In order to collaboratively work on a notebook you can invite collaborators by clicking the share button at the top right of the notebook. Type the email of your collaborator and make sure that the role is set to editor as shown bellow.
+In order to collaboratively work on a notebook you can invite collaborators by clicking the share button at the top right of the notebook. Type the email of your collaborator and make sure that the role is set to editor as shown below.
 
-![colab](images/collaboration.png)
+![collaboration](images/collaboration.png)
 
-By default Colab notebooks run on CPUs but for heavy computation you may need to GPU and TPU. To change the default, click on _Runtime_ and then _Change runtime type_; next select GPU or TPU in the runtime and save.
+By default Colab notebooks run on CPUs but for heavy computation you may need to use GPU and TPU. To change the default, click on _Runtime_ and then _Change runtime type_; next select GPU or TPU in the runtime and save.
 
 ![Runtime](images/runtime.png)
 
 To run codes in the cell you can click the play button on the left of the cell or _CTRL + ENTER_. If you want to get a new cell after running current cell, hit _SHIFT + ENTER_.
 
-## Import, install and check version of  libraries
+## Import, install and check version of libraries
 
 Common python libraries along with data science libraries such as Keras, TensorFlow, PyTorch, and OpenCV are available by default in the Colab and you can import them as usual. For example, to import Pandas, Numpy and Matplotlib libraries write the code below in a cell and run.
 ```python
@@ -38,7 +38,7 @@ However, sometimes we need to install libraries which are not available by defau
 
 #### Q1. Install _graphviz_ and _pydot_ library not in google Colab by default. What syntax worked for each library? Try to install any other library. Give screen shots of the successful install and version in your response. 
 
-## Importing Dataset
+## Importing dataset
 
 There are numerous ways to ingest data into a Colab notebook. Let us try to import some dataset from different sources.
  
@@ -93,7 +93,13 @@ df = pd.read_csv('s3://BUCKET-NAME/FILE-NAME')
  
 #### Q2. Try the three methods for uploading data to Colab. Add screenshots to the response file.
 
-## Training your first deep learning Model
+## Training your first deep learning model
+
+Though this tutorial is not concerned about Artificial Neural Networks (ANN), just to keep the readers in context, we give a brief introduction of them. As the name implies, ANN is a learning algorithm that mimics the working of human brain. It can learn complex functions from the dataset provided called the training dataset and can estimate the output of the function for the unknown dataset termed as the test dataset. Following figure from the [Convolutional Neural Networks for Visual Recognition](https://cs231n.github.io/) course of Stanford University shows the structure of a basic neural network.
+
+![Simple ANN architecture](images/neural_net.jpeg)  
+
+The network is build by strongly connecting the neurons i.e., the nodes by edges. Basically, each of the node sum all the values calculated by multiplying input values with the weights of the corresponding edges incident on it. It then apples an _activation function_ and send the result to the next layer. However, with the advances of technology, many complex concepts are introduced and adopted with the base architecture. Deep learning is a subclass of machine learning algorithms based on ANNs. When we are talking about deep neural networks, they usually have much more hidden layers than an ordinary ANN which also makes them computationally expensive. Deep learning has lot of application in computer vision, forecasting, natural language processing, and many other domains of AI.
 
 Now it is perfect time to train and test our first deep learning model. We will use [MNIST dataset](http://yann.lecun.com/exdb/mnist/) for this purpose. The dataset contains 70K 28X28 pixel grayscale images of handwritten digits between 0 to 9. For creating our model, we will use [Keras](https://keras.io/) library. Keras is one of the most popular open-source neural-network libraries written in Python. It has extensive documentation and facilitates fast creation of deep neural networks in a extensible and modular way. 
 
@@ -106,6 +112,7 @@ plt.rcParams['figure.figsize'] = (12,12) #increase the size of the figure to fit
 
 from keras.datasets import mnist #the dataset is available by default
 from keras.models import Sequential #class for creating the neural net model
+from keras.layers.core import Dense, Dropout, Activation #classes of building bolcks of neural network
 ```
 Now let's do some exploration of the dataset. First we want to know how the dataset looks like. Following code splits the dataset into train and test set and prints their dimensions.
 
@@ -142,7 +149,7 @@ Y_test = keras.utils.to_categorical(y_test, 10)
 ```
  #### Q3: At this step, verify the dimensions of the train set, test set, and corresponding class labels by printing them. Take a screenshot of the result and add it in your response. How the converted class labels of list of binary variables makes sense to you?  
  
- As we have prepared our dataset for training, next step is to create the model. Our model is pretty simple. It contains only three layers, one input and one hidden and one output layers. We pass the number of neurons in each layer to the _Dense()_ call. The Rectified Linear Unit (ReLU) activation function is used for the first two layers because it is easier to compute and gives better performance. To get the output as class labels, we define _softmax_ activation function for the final layer. Overfitting is a undesirable situation in model training where the network overfits the training dataset and so it gives worse performance for the unknown test dataset. To help avoiding the overfitting problem, we add a dropout layer after activation. Finally, we define the loss function, optimizer and performance metrics of the model and compile it. These parameters guide the training process and helps the model to be better and better as the training proceeds.   
+ As we have prepared our dataset for training, next step is to create the model. We use a simple model so that it does not take too much time in training and the time required to follow this tutorial remains reasonable. It contains only three layers, one input and one hidden and one output layers. We pass the number of neurons in each layer to the _Dense()_ call. The Rectified Linear Unit (ReLU) activation function is used for the first two layers because it is easier to compute and gives better performance. To get the output as class labels, we define _softmax_ activation function for the final layer. Overfitting is a undesirable situation in model training where the network overfits the training dataset and so it gives worse performance for the unknown test dataset. To help avoiding the overfitting problem, we add a dropout layer after activation. Finally, we define the loss function, optimizer and performance metrics of the model and compile it. These parameters guide the training process and helps the model to be better and better as the training proceeds.   
  
  ```python
 #define some parameters for the model
@@ -163,4 +170,99 @@ model.add(Activation('softmax'))
             
 model.compile(loss='categorical_crossentropy', optimizer='adam', metrics=['accuracy'])
 ```  
+It is intuitive that, we can devise more deeper networks by adding more layers in the network. A simple network like this can not perform well on a complex visual recognition task. Large number of layers enable network to learn complex functions which are required for advanced visual recognitions and operations. We can start training our network by running the following command. 
 
+```python
+model.fit(X_train, Y_train,
+          batch_size=size_of_batch, epochs=number_of_epoch,
+          verbose=1,
+          validation_data=(X_test, Y_test))
+```
+
+As the _verbose_ is enabled, the training progress will be shown as the following figure. For each of the epochs, the training and validation loss and accuracy are displayed. This helps to decide how well the training is going and also detect overfitting.
+  
+  ![training profiles](images/training.png)
+  
+If the training process is taking too much time, please make sure you are using a GPU in the runtime setting. After the end of training, the model is ready to be evaluated. The following code snippet evaluates the model on the test set and displays the accuracy. 
+
+```python
+score = model.evaluate(X_test, Y_test, verbose=0)
+print('Test accuracy:', score[1])
+```
+#### Q4: How much accuracy have you got? Is it satisfactory to you? If not, what could be done as a step to improve the accuracy? 
+
+It will be easier to understand the model by displaying some images on which the model success and fails rather than just a number. Therefore, we get the class labels predicted by the model for the test images and then compare it with the original class label and plot some samples. 
+
+```python
+predicted_classes = model.predict_classes(X_test)
+correct_predictions = np.nonzero(predicted_classes == y_test)[0]
+incorrect_predictions = np.nonzero(predicted_classes != y_test)[0]
+
+plt.figure()
+for index, correct_prediction in enumerate(correct_predictions[:9]):
+    plt.subplot(3,3,index+1)
+    plt.imshow(X_test[correct_prediction].reshape(28,28), cmap='gray')
+    plt.title("Predicted: {}, Original: {}".format(predicted_classes[correct_prediction], y_test[correct_prediction]))
+    
+plt.figure()
+for index, incorrect_prediction in enumerate(incorrect_predictions[:9]):
+    plt.subplot(3,3,index+1)
+    plt.imshow(X_test[incorrect_prediction].reshape(28,28), cmap='gray')
+    plt.title("Predicted: {}, Original: {}".format(predicted_classes[incorrect_prediction], y_test[incorrect_prediction]))
+```
+Let us have a look on some samples which are predicted successfully. 
+![Correctly identified samples](images/correct.png)
+
+Following figure shows some samples on which model fails to give correct predictions. 
+ 
+![Incorrectly identified samples](images/incorrect.png)
+
+
+## Integrating TensorBoard to visualizing training profile
+
+[TensorBoard](https://www.tensorflow.org/tensorboard) is a entirely offline suite of web applications for inspecting and understanding your machine learning model creation. Previously, we showed the training profiles through plain text verbose. This representation is not much helpful to understand the whole training process. Moreover, model creation is trial and error process. Usually we need to try with different parameter settings and compare the models. In such cases, TensorBoard comes into play. To configure the TensorBoard, substitute the previous training code block (_model.fit()_) with the following code block.
+```python
+%load_ext tensorboard
+import datetime, os
+from keras.callbacks import TensorBoard
+logdir = os.path.join("logs", datetime.datetime.now().strftime("%Y%m%d-%H%M%S"))
+tensorboard_callback = TensorBoard(logdir, histogram_freq=1)
+
+model.fit(X_train, Y_train,
+          batch_size=size_of_batch, epochs=number_of_epoch,
+          verbose=1,
+          validation_data=(X_test, Y_test), 
+          callbacks=[tensorboard_callback])
+%tensorboard --logdir logs
+```  
+The following TensorBoard dashboard shows how the loss decreases and accuracy increases with epochs. It also has some more complex visualization options to better understand your model creation.
+
+![TensorBoard dashboard](images/tensorboard.png)
+
+
+#### Q5: Add a screenshot of the TensorBoard dashboard showing your training profiles.  
+
+## Tips and shortcuts
+
+To increase your productivity in using Colab, in this concluding section we provide some useful tips and shortcuts.
+
+**Running terminal commands:** You can run the terminal commands in the notebook cell by just adding '!' sign in the beginning of the command like this: _!pwd_. Therefore, you can _git clone_ the repositories as you can do in terminal. 
+
+**Checking environment information:** You can get the details of the CPU of your environment by running the command _!cat /proc/cpuinfo_ and for RAM it is _!cat /proc/meminfo_. To get the GPU information, you have to run the following code. 
+
+```python
+import tensorflow as tf
+tf.test.gpu_device_name()
+```
+**Checking function documentation:** During coding we frequently need to check the documentation of library functions. For that, you just have to add a '?' at the end of function name, then Colab will show the documentation of the function.  
+
+**No backend with GPU available:** You may rarely get this error when trying to use GPU. This means no GPU is available to be provisioned. In this case you have to try again later.
+
+**Colab Pro:** If you want to increase your continuous usage time from 12 hours to 24 hours and get priority access to faster GPUs and high memory (default is 13GB) environments, you can upgrade your account to Colab Pro by paying $9.99/month.    
+
+## Optional activity
+How about having some fun when you go through the complex model creation process? Go to _Settings_ from to right corner and then _Miscellaneous_ option. Enable one or both options as shown below and see the magic! 
+
+![Fun activity](images/mis.png)
+
+### Happy Coding!
